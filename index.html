@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hangman</title>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+  <h1>Hangman Game</h1>
+
+  <!-- Div for left side to hold pictues of correct guessed words -->
+  <div class="container" id="left-side">
+    
+    <div id="picture">
+        <img style="width: 100%;" src="https://media3.giphy.com/media/3ZZeiFwplAGlLxHNvQ/giphy.gif" alt="saloon doors">
+    </div>
+
+  </div>
+
+  <!-- div for right side to hold blank letters and guessed letters -->
+  <div class="container" id="right-side">
+    <p>Press any key to pick a letter!</p>
+    <br>
+    <p>But be careful! 6 wrong guesses, and you lose!</p>
+    <br>
+
+    <div id="blanks"></div>
+
+
+
+  </div>
+
+
+
+
+
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="assets/javascript/game.js"></script>
+</body>
+
+</html>
