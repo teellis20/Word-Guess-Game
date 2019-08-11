@@ -27,6 +27,7 @@ var blankFiller;
 var id;
 var isWrong = false;
 var strikes = 0;
+var mySound;
 
 // adding the blanks and letters to the game
 function getBlanks(blank,spelled) {
@@ -53,7 +54,6 @@ console.log(randomWord);
             id = "#" + array[i] + old.toString();
            $(id).html(array[i]);
             console.log("right guess");
-            console.log("your id is: " + id);
         } else {
             isWrong = true;
             console.log("wrong guess");
@@ -70,6 +70,10 @@ console.log(randomWord);
         $("#wrong").append(wrongFiller);
         strikes++;
         console.log(strikes);
+        if(strikes == 10) {
+            alert("You took too many guesses, you lose!");
+
+          };
     };
 };
 
@@ -79,8 +83,14 @@ document.onkeyup = function(event) {
     console.log(userGuess);
     checkGuess(randomWord);
     pushWrong();
-
+    mySound = new Audio("gun.mp3")
+    mySound.play();
 };
+
+
+
+    
+
 
 // fill in the divs with the blanks/letters
 if (randomWord == "saloon") {
@@ -98,6 +108,5 @@ if (randomWord == "yeehaw") {
 if (randomWord == "shootout") {
     getBlanks(shootout.blank, shootout.spelledOut); 
 };
-
 
 
