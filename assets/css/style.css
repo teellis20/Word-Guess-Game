@@ -48,14 +48,17 @@ p {
 .blankclass {
     width: 24px;
     height: 30px;
-    padding: 5px;
-    margin: 5px;
+    padding: 0 5px 5px 5px;
+    margin-right: 5px;
     color: white;
-    float: left
+    float: left;
+    font-size: 35px;
+    text-align: center;
 }
 
 .right-blank {
-    margin-top: 20px;
+    float: left;
+    margin-top: 2px;
     margin-left: 50px;
 }
 
@@ -72,4 +75,16 @@ p {
     float: left;
     padding: 25px;
     margin-left: 40px;
+}
+
+.right-hidden {
+    float: left;
+    /* visibility: hidden; */
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.filler {
+    font-size: 24px;
+    text-align: center;
 }
