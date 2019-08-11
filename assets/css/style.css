@@ -45,11 +45,31 @@ p {
     line-height: 150%;
 }
 
-.blanks {
+.blankclass {
     width: 24px;
     height: 30px;
     padding: 5px;
     margin: 5px;
     color: white;
     float: left
+}
+
+.right-blank {
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.right-guess {
+    padding: 100px;
+}
+
+#wrong {
+    color: white;
+    font-size: 35px;
+}
+
+#wrong-text {
+    float: left;
+    padding: 25px;
+    margin-left: 40px;
 }
